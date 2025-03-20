@@ -1,0 +1,6 @@
+@VedaHawkeyeApi_HostAddress = http://localhost:5005
+
+GET {{VedaHawkeyeApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

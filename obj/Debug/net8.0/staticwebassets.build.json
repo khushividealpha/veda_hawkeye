@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Al79IOsEZjDF90muiFvz32B32a8KCmL1OyqUgCS9Inw=",
+  "Source": "VedaHawkeyeApi",
+  "BasePath": "_content/VedaHawkeyeApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
