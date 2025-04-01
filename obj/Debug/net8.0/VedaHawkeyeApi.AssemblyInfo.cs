@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VedaHawkeyeApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53f748296917961b7a06955e43650585fb8be737")]
 [assembly: System.Reflection.AssemblyProductAttribute("VedaHawkeyeApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VedaHawkeyeApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

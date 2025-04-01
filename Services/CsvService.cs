@@ -39,36 +39,7 @@ namespace VedaHawkeyeApi.Services
                 throw new Exception("Error reading CSV file", ex);
             }
         }
-        public async Task<List<BrokerDataFile>> ReadBrokerDatFileAsync(Stream fileStream, string outputPath)
-        {
-            try
-            {
-                using var memoryStream = new MemoryStream();
-                await fileStream.CopyToAsync(memoryStream);
-                memoryStream.Position = 0;
-                var trades = new List<BrokerDataFile>();
 
-
-                using (var stream = new StreamReader(memoryStream))
-                using (var csv = new CsvReader(stream, new CsvConfiguration(CultureInfo.InvariantCulture)
-                {
-                    BadDataFound = context => Console.WriteLine($"Bad data found: {context.RawRecord}"),
-                    HeaderValidated = null
-                }))
-                {
-                    csv.Context.RegisterClassMap<BrokerTradesMap>();
-                    trades = csv.GetRecords<BrokerDataFile>().ToList();
-                }
-
-                return trades;
-            }
-
-
-            catch (Exception ex)
-            {
-                throw new Exception("Error reading CSV file", ex);
-            }
-        }
         public async Task ExportNetPositionAsync(Stream fileStream, string outputPath)
         {
             var trades = await ReadCsvAsync(fileStream);
@@ -151,23 +122,13 @@ namespace VedaHawkeyeApi.Services
                     BadDataFound = context => Console.WriteLine($"Bad data found: {context.RawRecord}"),
                     HeaderValidated = null,
                     MissingFieldFound = null
-                });
+                });                
+                var data = csv.GetRecords<dynamic>()  // Read CSV rows as dynamic objects
+                                 .Select(record => ((IDictionary<string, object>)record) // Convert each row to dictionary
+                                 .ToDictionary(kv => kv.Key, kv => kv.Value)) // Convert to Dictionary<string, object>
+                                 .ToList(); // Convert to a list
 
-                csv.Read();
-                csv.ReadHeader();
-                var headers = csv.HeaderRecord; // Dynamically get the headers
-
-                while (csv.Read())
-                {
-                    var record = new Dictionary<string, object>();
-
-                    foreach (var header in headers)
-                    {
-                        record[header] = csv.GetField(header);
-                    }
-
-                    records.Add(record);
-                }
+                return data;
             }
             catch (Exception ex)
             {
@@ -175,7 +136,74 @@ namespace VedaHawkeyeApi.Services
                 throw;
             }
 
-            return records;
+        }
+        public async Task<List<BrokerDataFile>> ReadBrokerDataFileAsync(Stream fileStream, string outputPath)
+        {
+            try
+            {
+                using var memoryStream = new MemoryStream();
+                await fileStream.CopyToAsync(memoryStream);
+                memoryStream.Position = 0;
+                var trades = new List<BrokerDataFile>();
+
+
+                using (var stream = new StreamReader(memoryStream))
+                using (var csv = new CsvReader(stream, new CsvConfiguration(CultureInfo.InvariantCulture)
+                {
+                    BadDataFound = context => Console.WriteLine($"Bad data found: {context.RawRecord}"),
+                    HeaderValidated = null
+                }))
+                {
+                    csv.Context.RegisterClassMap<BrokerTradesMap>();
+                    trades = csv.GetRecords<BrokerDataFile>().ToList();
+                }
+
+                return trades;
+            }
+
+
+            catch (Exception ex)
+            {
+                throw new Exception("Error reading CSV file", ex);
+            }
+        }
+
+
+        public async Task<List<TradeFile>> ReadHeadersFromCsvAsync(Stream fileStream)
+        {
+            try
+            {
+                using var memoryStream = new MemoryStream();
+                await fileStream.CopyToAsync(memoryStream);
+                memoryStream.Position = 0;
+
+                using var reader = new StreamReader(memoryStream);
+                using var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture));
+
+                csv.Read(); // Read the first row (headers)
+                csv.ReadHeader();
+
+                var headers = csv.HeaderRecord; // Get headers from CSV
+                var result = new List<TradeFile>();
+
+                if (headers != null)
+                {
+                    for (int i = 0; i < headers.Length; i++)
+                    {
+                        result.Add(new TradeFile
+                        {
+                            Name = headers[i], // Column Name
+                            HeaderIndex = i         // Column Position
+                        });
+                    }
+                }
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error reading CSV headers", ex);
+            }
         }
     }
 }

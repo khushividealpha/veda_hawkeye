@@ -32,8 +32,10 @@ C:\Users\KHUSHI\Downloads\VedaHawkeyeApi\VedaHawkeyeApi\VedaHawkeyeApi\obj\Debug
 C:\Users\KHUSHI\Downloads\VedaHawkeyeApi\VedaHawkeyeApi\VedaHawkeyeApi\obj\Debug\net8.0\VedaHawkeyeApi.genruntimeconfig.cache
 C:\Users\KHUSHI\Downloads\VedaHawkeyeApi\VedaHawkeyeApi\VedaHawkeyeApi\obj\Debug\net8.0\ref\VedaHawkeyeApi.dll
 C:\Users\KHUSHI\Downloads\VedaHawkeyeApi\VedaHawkeyeApi\VedaHawkeyeApi\obj\Debug\net8.0\VedaHawkeyeApi.sourcelink.json
+E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\wwwroot\wkhtmltox.dll
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\appsettings.Development.json
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\appsettings.json
+E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\VedaHawkeyeApi.staticwebassets.runtime.json
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\VedaHawkeyeApi.staticwebassets.endpoints.json
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\VedaHawkeyeApi.exe
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\VedaHawkeyeApi.deps.json
@@ -41,6 +43,8 @@ E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\VedaHawkeyeApi.runti
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\VedaHawkeyeApi.dll
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\VedaHawkeyeApi.pdb
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\CsvHelper.dll
+E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\DinkToPdf.dll
+E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\HtmlToPdfConverter.dll
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -52,6 +56,7 @@ E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\obj\Debug\net8.0\VedaHawkeyeApi.Assem
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\obj\Debug\net8.0\VedaHawkeyeApi.csproj.CoreCompileInputs.cache
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\obj\Debug\net8.0\VedaHawkeyeApi.MvcApplicationPartsAssemblyInfo.cs
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\obj\Debug\net8.0\VedaHawkeyeApi.MvcApplicationPartsAssemblyInfo.cache
+E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\obj\Debug\net8.0\VedaHawkeyeApi.sourcelink.json
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\obj\Debug\net8.0\scopedcss\bundle\VedaHawkeyeApi.styles.css
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\obj\Debug\net8.0\staticwebassets.build.json
 E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\obj\Debug\net8.0\staticwebassets.development.json

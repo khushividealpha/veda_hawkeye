@@ -1,12 +1,465 @@
 {
   "Version": 1,
-  "Hash": "Al79IOsEZjDF90muiFvz32B32a8KCmL1OyqUgCS9Inw=",
+  "Hash": "zKjZdpddD8h5G5IrOY7BZXhb3DxF+eK/AIuzKkuCFxw=",
   "Source": "VedaHawkeyeApi",
   "BasePath": "_content/VedaHawkeyeApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "VedaHawkeyeApi\\wwwroot",
+      "Source": "VedaHawkeyeApi",
+      "ContentRoot": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\wwwroot\\",
+      "BasePath": "_content/VedaHawkeyeApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\obj\\Debug\\net9.0\\compressed\\2119a5i3nc-kz17487uij.gz",
+      "SourceId": "VedaHawkeyeApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/VedaHawkeyeApi",
+      "RelativePath": "wkhtmltox#[.{fingerprint=kz17487uij}]?.dll.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\wwwroot\\wkhtmltox.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "lixrbsgv5k",
+      "Integrity": "bX2nEjShWgwfVVF4rzNn/TOQ2CX1TSzaRbkHDiv32Fo=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\wwwroot\\wkhtmltox.dll"
+    },
+    {
+      "Identity": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\wwwroot\\libwkhtmltox.a",
+      "SourceId": "VedaHawkeyeApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\wwwroot\\",
+      "BasePath": "_content/VedaHawkeyeApi",
+      "RelativePath": "libwkhtmltox#[.{fingerprint}]?.a",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f2g608d7gt",
+      "Integrity": "10bVv63LVpw6O3/ddTnexdzYX4pr2cR9/Lr0dZYYzKQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\libwkhtmltox.a"
+    },
+    {
+      "Identity": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\wwwroot\\wkhtmltox.dll",
+      "SourceId": "VedaHawkeyeApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\wwwroot\\",
+      "BasePath": "_content/VedaHawkeyeApi",
+      "RelativePath": "wkhtmltox#[.{fingerprint}]?.dll",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kz17487uij",
+      "Integrity": "0JnDQt6YXXk6Kp6pDQBSCOkPuJB/EkUzKmodlSgtnJ0=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\wkhtmltox.dll"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "libwkhtmltox.a",
+      "AssetFile": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\wwwroot\\libwkhtmltox.a",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"10bVv63LVpw6O3/ddTnexdzYX4pr2cR9/Lr0dZYYzKQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Jun 2020 00:24:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-10bVv63LVpw6O3/ddTnexdzYX4pr2cR9/Lr0dZYYzKQ="
+        }
+      ]
+    },
+    {
+      "Route": "libwkhtmltox.f2g608d7gt.a",
+      "AssetFile": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\wwwroot\\libwkhtmltox.a",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"10bVv63LVpw6O3/ddTnexdzYX4pr2cR9/Lr0dZYYzKQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Jun 2020 00:24:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f2g608d7gt"
+        },
+        {
+          "Name": "label",
+          "Value": "libwkhtmltox.a"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-10bVv63LVpw6O3/ddTnexdzYX4pr2cR9/Lr0dZYYzKQ="
+        }
+      ]
+    },
+    {
+      "Route": "wkhtmltox.dll",
+      "AssetFile": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\obj\\Debug\\net9.0\\compressed\\2119a5i3nc-kz17487uij.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000062758"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15934299"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bX2nEjShWgwfVVF4rzNn/TOQ2CX1TSzaRbkHDiv32Fo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Jun 2020 00:24:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"0JnDQt6YXXk6Kp6pDQBSCOkPuJB/EkUzKmodlSgtnJ0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0JnDQt6YXXk6Kp6pDQBSCOkPuJB/EkUzKmodlSgtnJ0="
+        }
+      ]
+    },
+    {
+      "Route": "wkhtmltox.dll",
+      "AssetFile": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\wwwroot\\wkhtmltox.dll",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41382912"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0JnDQt6YXXk6Kp6pDQBSCOkPuJB/EkUzKmodlSgtnJ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Jun 2020 00:24:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0JnDQt6YXXk6Kp6pDQBSCOkPuJB/EkUzKmodlSgtnJ0="
+        }
+      ]
+    },
+    {
+      "Route": "wkhtmltox.dll.gz",
+      "AssetFile": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\obj\\Debug\\net9.0\\compressed\\2119a5i3nc-kz17487uij.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15934299"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bX2nEjShWgwfVVF4rzNn/TOQ2CX1TSzaRbkHDiv32Fo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Jun 2020 00:24:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bX2nEjShWgwfVVF4rzNn/TOQ2CX1TSzaRbkHDiv32Fo="
+        }
+      ]
+    },
+    {
+      "Route": "wkhtmltox.kz17487uij.dll",
+      "AssetFile": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\obj\\Debug\\net9.0\\compressed\\2119a5i3nc-kz17487uij.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000000062758"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15934299"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bX2nEjShWgwfVVF4rzNn/TOQ2CX1TSzaRbkHDiv32Fo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Jun 2020 00:24:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"0JnDQt6YXXk6Kp6pDQBSCOkPuJB/EkUzKmodlSgtnJ0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kz17487uij"
+        },
+        {
+          "Name": "label",
+          "Value": "wkhtmltox.dll"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0JnDQt6YXXk6Kp6pDQBSCOkPuJB/EkUzKmodlSgtnJ0="
+        }
+      ]
+    },
+    {
+      "Route": "wkhtmltox.kz17487uij.dll",
+      "AssetFile": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\wwwroot\\wkhtmltox.dll",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41382912"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0JnDQt6YXXk6Kp6pDQBSCOkPuJB/EkUzKmodlSgtnJ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Jun 2020 00:24:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kz17487uij"
+        },
+        {
+          "Name": "label",
+          "Value": "wkhtmltox.dll"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0JnDQt6YXXk6Kp6pDQBSCOkPuJB/EkUzKmodlSgtnJ0="
+        }
+      ]
+    },
+    {
+      "Route": "wkhtmltox.kz17487uij.dll.gz",
+      "AssetFile": "E:\\manoj sir\\VedaHawkeyeApi\\VedaHawkeyeApi\\obj\\Debug\\net9.0\\compressed\\2119a5i3nc-kz17487uij.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15934299"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bX2nEjShWgwfVVF4rzNn/TOQ2CX1TSzaRbkHDiv32Fo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Jun 2020 00:24:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kz17487uij"
+        },
+        {
+          "Name": "label",
+          "Value": "wkhtmltox.dll.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bX2nEjShWgwfVVF4rzNn/TOQ2CX1TSzaRbkHDiv32Fo="
+        }
+      ]
+    }
+  ]
 }

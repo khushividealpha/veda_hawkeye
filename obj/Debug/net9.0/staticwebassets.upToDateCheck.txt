@@ -1,0 +1,3 @@
+E:\manoj sir\VedaHawkeyeApi\VedaHawkeyeApi\wwwroot\wkhtmltox.dll
+wwwroot\libwkhtmltox.a
+wwwroot\wkhtmltox.dll

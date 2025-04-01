@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using VedaHawkeyeApi.Interfaces;
 
 namespace VedaHawkeyeApi.Controllers
@@ -58,6 +57,18 @@ namespace VedaHawkeyeApi.Controllers
             {
                 return StatusCode(500, new { Message = "Error processing file", Error = ex.Message });
             }
+        }
+        [HttpPost("upload/v2")]
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> UploadTradeFile( IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+            {
+                return BadRequest("File is required.");
+            }
+
+            var headers = await _csvService.ReadHeadersFromCsvAsync(file.OpenReadStream());
+            return Ok(headers);
         }
     }
 }

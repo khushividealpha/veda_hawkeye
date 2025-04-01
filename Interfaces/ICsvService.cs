@@ -9,5 +9,6 @@ namespace VedaHawkeyeApi.Interfaces
         Task ExportOpenPositionAsync(Stream fileStream, string outputPath);
       //  Task ReadBrokerDatFileAsync(Stream fileStream, string outputPath);
          Task<List<Dictionary<string, object>>> ProcessFileAsync(Stream fileStream);
+        Task<List<TradeFile>> ReadHeadersFromCsvAsync(Stream fileStream);
     }
 }

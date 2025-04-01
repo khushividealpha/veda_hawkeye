@@ -101,6 +101,18 @@
         }
       }
     },
+    "/api/Pdf/generate-finance-report": {
+      "get": {
+        "tags": [
+          "Pdf"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [

@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "report_generate.Controllers.PdfController",
+    "Method": "GenerateFinancePdf",
+    "RelativePath": "api/Pdf/generate-finance-report",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "VedaHawkeyeApi.Controllers.CsvController",
     "Method": "UploadFile",
     "RelativePath": "api/upload",

@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-size: 20px;
+            font-weight:bold;
+        }
+
+        .pdf-container {         
+            margin: auto;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            padding: 35px;
+        }
+
+        .separator {
+            background-color: #6495ed;
+            height: 2px;
+            border: none;
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        .account-info {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+            font-size: 25px;
+            font-weight:bolder;
+        }
+
+            .account-info td {
+                padding: 5px;
+            }
+/*
+        .header-table {
+            width: 100%;
+            border-collapse: collapse;
+                 font-size: 2em;
+        }*/
+
+            .header-table td {
+                vertical-align: top;
+                padding: 5px;
+            }
+
+        .header-left, .header-center, .header-right {
+            text-align: left;
+            font-size: 15px;
+        
+        }
+
+        .custom-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 22px;
+            text-align: center;
+            white-space: normal;
+            border: 1px solid black;
+        }
+
+            .custom-table thead {
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                background-color: #b8c4dc;
+                font-weight: bolder;
+            }
+
+            .custom-table th {
+                border-left: none;
+                border-right: none;
+                padding: 5px;
+                text-transform: uppercase;
+                font-size: 19px;
+            }
+
+            .custom-table tbody tr td {
+                border: none;
+                font-weight:normal;
+                padding: 4px;
+            }
+
+
+    /*    .note-container {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 10px;
+        }*/
+
+        .border-box {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bolder;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            background-color: #6495ed;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        #title {
+            font-size: .5em;
+        }
+    </style>
+</head>
+
+
+    <body>
+        <div class="pdf-container">
+           <!-- <table class="header-table">
+                <tr>
+                    <td>
+                        <h3>APM Capital Limited</h3>
+                        <p id="title">1009,10, Al Khatem Tower, ADGM Square, Al Maryah Island, Abu Dhabi, UAE</p>
+                        <p id="title">Email: info@apmcapital.ae</p>
+                    </td>
+                    <td>
+                        <h4>CLIENT DAILY STATEMENT</h4>
+                        <p id="title">STATEMENT Date: 2025-03-07</p>
+                    </td>
+                    <td>
+                        <h3>Div 3</h3>
+                    </td>
+                </tr>
+            </table>-->
+            <hr class="separator">
+            <table class="account-info">
+                <tr>
+                    <td><h6>F2E - 2 <br /> DUBAI UNITED ARAB EMIRATES<br /> TIN No. :</h6></td>
+                    <td><h6>ACCOUNT NO: 02<br /> ACCOUNT GROUP: CLIENT</h6></td>
+                </tr>
+            </table>
+            <div class='border-box'>FINANCIAL SUMMARY</div>
+            <div style='margin:auto; text-align:left; font-weight:bold; font-size:22px;'>
+                EXCHANGE RATES DISPLAYED HERE FROM BASE CURRENCY TO ORIGINAL CURRENCY
+            </div>
+            <hr class="separator">
+            <table class='custom-table'>
+                <thead>
+                    <tr>
+                        <th>CCY CODE</th>
+                        <th>CCY RATE</th>
+                        <th>OPENING Balance</th>
+                        <th>Payments</th>
+                        <th>Brokerage & Fees</th>
+                        <th>VAT</th>
+                        <th>Premium</th>
+                        <th>Profit/Loss</th>
+                        <th>Ending Balance</th>
+                        <th>ForwardLine Unrealised</th>
+                        <th>OpenTrade Equity</th>
+                        <th>DailyOption Value</th>
+                        <th>Account Val AtMKT</th>
+                        <th>Initial Margin</th>
+                        <th>TotalAvailable Margin</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        {{FinanceRows}}
+                    </tr>
+                </tbody>
+            </table>
+            <hr class='separator'>
+            <div class='border-box'>ACCOUNT BALANCES</div>
+            <table class='custom-table'>
+                <thead>
+                    <tr>
+                        <th>ENTRY REF NO</th>
+                        <th>SHORT DESCRIPTION</th>
+                        <th>DEBIT</th>
+                        <th>CREDIT</th>
+                        <th>RUNNING VALUE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        {{AccountBalanceRows}}
+                    </tr>
+                </tbody>
+            </table>
+        <!--    <div class='note-container'>
+                <b>Note: Please report to us within 24 hours if this statement is incorrect.</b>
+                <p>APM Capital Limited is incorporated in the Abu Dhabi Global Market (ADGM).</p>
+                <p>Printed On: 2025-03-07</p>
+            </div>-->
+            <hr class='separator'>
+            <div class='border-box'>NEW TRADING ACTIVITY</div>
+            <table class='custom-table'>
+                <thead>
+                    <tr>
+                        <th>DATE</th>
+                        <th>TRADE NO</th>
+                        <th>CODE</th>
+                        <th>EXCH</th>
+                        <th>LONG</th>
+                        <th>SHORT</th>
+                        <th>CONTRACT</th>
+                        <th>C/P</th>
+                        <th>STRIKE</th>
+                        <th>TRADE PRICE</th>
+                        <th>COMMS</th>
+                        <th>CCY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        {{TradeRows}}
+                    </tr>
+                </tbody>
+            </table>
+            <div class='border-box'>OPEN POSITION</div>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>TradeNo</th>
+                        <th>Code</th>
+                        <th>Exch</th>
+                        <th>long</th>
+                        <th>short</th>
+                        <th>expiry</th>
+                        <th>c/p</th>
+                        <th>strike</th>
+                        <th>trade price</th>
+                        <th>exch price</th>
+                        <th>ccy</th>
+                        <th>debit/credit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        {{OpenPositionRows}}
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+
+</html>

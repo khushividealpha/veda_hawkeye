@@ -1,8 +1,66 @@
 [
   {
+    "ContainingType": "report_generate.Controllers.PdfController",
+    "Method": "GenerateFinancePdf",
+    "RelativePath": "api/Pdf/generate-finance-report",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "VedaHawkeyeApi.Controllers.CsvController",
-    "Method": "UploadCsv",
-    "RelativePath": "api/csv/upload",
+    "Method": "UploadFile",
+    "RelativePath": "api/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VedaHawkeyeApi.Controllers.CsvController",
+    "Method": "UploadNetPosition",
+    "RelativePath": "api/upload/netposition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VedaHawkeyeApi.Controllers.CsvController",
+    "Method": "UploadOpenPosition",
+    "RelativePath": "api/upload/openposition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VedaHawkeyeApi.Controllers.CsvController",
+    "Method": "UploadTradeFile",
+    "RelativePath": "api/upload/v2",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
